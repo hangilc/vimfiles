@@ -18,7 +18,8 @@ set completeopt-=preview
 set autowrite
 
 autocmd FileType go nmap <leader>b <Plug>(go-build)
-autocmd FileType go nmap <leader>i <Plug>(go-imports)
+autocmd FileType go nmap <leader>i <Plug>(go-imports) \| :w<CR>
+
 
 
 
