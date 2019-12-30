@@ -5,6 +5,8 @@ set autoindent
 set nocompatible
 set backspace=indent,eol,start
 set ff=unix
+set nobackup
+set noswapfile
 noh
 
 call plug#begin('~/.vim/plugged')
@@ -19,6 +21,7 @@ set autowrite
 
 autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>i <Plug>(go-imports) \| :w<CR>
+autocmd FileType go nmap <leader>I <Plug>(go-info)
 
 
 
