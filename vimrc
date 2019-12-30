@@ -12,6 +12,12 @@ Plug 'fatih/vim-go'
 Plug 'tpope/vim-commentary'
 call plug#end()
 
+let mapleader = ","
 autocmd CompleteDone * pclose
+
+autocmd FileType go nmap <leader>b <Plug>(go-build)
+autocmd FileType go nmap <leader>i <Plug>(go-imports)
+
+
 
 
