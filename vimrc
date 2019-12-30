@@ -14,6 +14,8 @@ call plug#end()
 
 let mapleader = ","
 autocmd CompleteDone * pclose
+set completeopt-=preview
+set autowrite
 
 autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>i <Plug>(go-imports)
