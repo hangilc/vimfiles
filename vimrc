@@ -7,6 +7,7 @@ set backspace=indent,eol,start
 set ff=unix
 set nobackup
 set noswapfile
+set number
 noh
 
 call plug#begin('~/.vim/plugged')
