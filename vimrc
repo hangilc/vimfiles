@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-commentary'
 Plug 'Shougo/unite.vim'
+Plug 'Shougo/neomru.vim'
 call plug#end()
 
 let mapleader = ","
