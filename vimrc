@@ -13,6 +13,8 @@ noh
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 let mapleader = ","
