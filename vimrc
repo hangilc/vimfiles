@@ -9,12 +9,11 @@ set nobackup
 set noswapfile
 set number
 noh
+:set fileencodings=utf-8,sjis
 
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
 call plug#end()
 
 let mapleader = ","
@@ -28,7 +27,7 @@ autocmd FileType go nmap <leader>I <Plug>(go-info)
 
 if executable('pt')
     let g:unite_source_grep_command = 'pt'
-    let g:unite_source_grep_default_opts = '--nogroup --nocolor'
+    let g:unite_source_grep_default_opts = '--nogroup --nocolor --smart-case'
     let g:unite_source_grep_recursive_opt = ''
     let g:unite_source_grep_encoding = 'utf-8'
 endif
