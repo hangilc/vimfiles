@@ -32,5 +32,10 @@ if executable('pt')
     let g:unite_source_grep_encoding = 'utf-8'
 endif
 
-
+if has("win32") && executable('AutoHotkeyU64.exe')
+    augroup insertLeave
+        autocmd!
+        autocmd InsertLeave * :call system('AutoHotkeyU64.exe ' . $HOME . '/.vim/ImeDisable.ahk')
+    augroup END
+endif
 
